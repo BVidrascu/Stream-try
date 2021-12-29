@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-data = pd.read_csv('https://raw.githubusercontent.com/BVidrascu/Stream-try/main/survey_results_public.csv')
+data = pd.read_csv('Pandas tutorial/data/survey_results_public.csv')
 header = st.container()
 body = st.container()
 
@@ -17,5 +17,9 @@ with body:
     st.bar_chart(opsrc_distribution, height = 700, width = 1000)
     x = st.slider('Cat de mult ti-a placut?', 1, 10, 0)  
     st.write('Ok, ', x, ' sa fie, daca atata vrei tu...')
-    if st.button('Nu apasa butonul'):
+    buton = st.button('Nu apasa butonul')
+    st.write(buton)
+    if buton:
         st.balloons()
+
+    
