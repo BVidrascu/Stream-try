@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-data = pd.read_csv('Pandas tutorial/data/survey_results_public.csv')
+data = pd.read_csv('https://raw.githubusercontent.com/BVidrascu/Stream-try/main/survey_results_public.csv')
 header = st.container()
 body = st.container()
 
