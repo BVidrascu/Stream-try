@@ -18,4 +18,4 @@ with body:
     x = st.slider('Cat de mult ti-a placut?', 1, 10, 0)  
     st.write('Ok, ', x, ' sa fie, daca atata vrei tu...')
     if st.button('Nu apasa butonul'):
-     st.balloons()
+        st.balloons()
